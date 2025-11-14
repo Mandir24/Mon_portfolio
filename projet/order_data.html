@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="A datavisualization tool that leads you from your data to the graphic you need." content="">
+    <meta name="Mandir DIOP" content="">
+
+    <title>Projets</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="../img/logo/mandir_log.ico">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/agency.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+  </head>
+
+<body id="page-top">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav"></nav>
+  <script>
+    $(function(){
+      $("#mainNav").load("../menu_projet.html");
+    });
+  </script>
+
+  <!-- ========================== SECTION PROJET MANCHOTS =========================== -->
+  <section id="projet-manchots" class="py-5">
+    <div class="container">
+      <h2 class="section-heading text-uppercase text-center mb-4">
+        Étude sur les manchots de l’archipel Palmer
+      </h2>
+
+      <div class="text-center mb-3">
+        <span class="badge bg-success mx-1">Analyse statistique</span>
+        <span class="badge bg-info text-dark mx-1">Régression linéaire</span>
+        <span class="badge bg-secondary mx-1">R</span>
+      </div>
+
+      <div class="text-center mb-4">
+        <img src="../img/projets/manchots.jpg" class="img-fluid rounded shadow-sm"
+             alt="Photo de manchots en Antarctique" style="max-width: 600px;">
+      </div>
+
+      <div class="mt-4">
+        <h4>Contexte du projet</h4>
+        <hr style="border: 1px solid #ddd; border-radius: 5px; margin-top: -5px; margin-bottom: 20px;">
+        <p>
+          Ce projet explore les caractéristiques physiques des manchots de l’archipel Palmer en Antarctique.
+          L’objectif : comprendre quels facteurs influencent le plus leur poids, notamment la longueur des nageoires,
+          la profondeur du bec ou encore le sexe et l’espèce.
+          L’étude a été réalisée à l’aide de modèles de régression linéaire et d’analyses descriptives pour dégager des tendances claires et visuelles.
+        </p>
+
+        <h4>Méthodologie</h4>
+        <hr style="border: 1px solid #ddd; border-radius: 5px; margin-top: -5px; margin-bottom: 20px;">
+        <p>
+          Après un nettoyage des données et une exploration statistique initiale,
+          plusieurs modèles ont été comparés afin d’évaluer la pertinence des variables explicatives.
+          L’analyse a permis de visualiser les relations entre les mesures morphologiques et le poids,
+          tout en identifiant des effets de groupe pouvant masquer certaines tendances globales.
+        </p>
+
+        <h4>Résultats principaux</h4>
+        <hr style="border: 1px solid #ddd; border-radius: 5px; margin-top: -5px; margin-bottom: 20px;">
+        <p>
+          Les résultats montrent que la <strong>longueur des nageoires</strong> est le meilleur indicateur du poids des manchots.
+          Si les mâles sont en moyenne plus lourds que les femelles, cette différence n’explique pas à elle seule la variabilité observée.
+          L’espèce joue également un rôle important, certaines étant naturellement plus massives que d’autres.
+          L’analyse a aussi permis d’éviter les erreurs d’interprétation liées au <em>paradoxe de Simpson</em>,
+          en distinguant correctement les tendances globales et intra-groupes.
+        </p>
+
+        <h4>Visualisation</h4>
+        <hr style="border: 1px solid #ddd; border-radius: 5px; margin-top: -5px; margin-bottom: 20px;">
+        <p>
+          Le graphique ci-dessous illustre la relation entre le poids et la longueur des nageoires chez les différentes espèces de manchots.
+        </p>
+
+        <div class="text-center mb-4">
+          <img src="../img/projets/graphique_manchots.png"
+               class="img-fluid rounded shadow-sm"
+               alt="Nuage de dispersion des manchots"
+               style="max-width: 700px;">
+        </div>
+
+        <h4>En résumé</h4>
+        <hr style="border: 1px solid #ddd; border-radius: 5px; margin-top: -5px; margin-bottom: 20px;">
+        <p>
+          Ce projet met en avant l’importance d’une approche visuelle et statistique rigoureuse pour comprendre les données biologiques.
+          Il illustre comment des modèles simples peuvent révéler des relations intéressantes,
+          à condition de bien prendre en compte la structure des groupes étudiés.
+        </p>
+
+        <div class="text-center mt-4">
+          <a href="../docs/projet_manchots.pdf" target="_blank" class="btn btn-primary">
+            <i class="fa fa-file-pdf-o me-2"></i> Consulter le rapport complet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <span class="copyright">Copyright &copy; 2025 Mandir DIOP</span>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline social-buttons text-center">
+            <li class="list-inline-item">
+              <a href="https://github.com/Mandir24" title="Github">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/mandir-diop-92bab6276/" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:diopmandir53@gmail.com" title="diopmandir53@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="tel:+33780856634" title="+33 7 80 85 66 34">
+                <i class="fa fa-phone"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" title="Lisieux, 14100">
+                <i class="fa fa-map-marker"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-inline quicklinks text-right">
+            <li class="list-inline-item">
+              <a href="#">Tous droits réservés</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+
+</html>

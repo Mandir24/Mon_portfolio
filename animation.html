@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .word-animation {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    #animated-buttons {
+      position: relative;
+      height: 70px; /* pour réserver l’espace */
+    }
+
+    .visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <section id="description" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img class="img-fluid" src="img/profile.png" alt="Mandir DIOP profile picture" style="margin-bottom: 30px">
+        </div>
+        <div class="col-lg-8 text-center text-md-start">
+          <p>Bonjour, Je suis Mandir.</p>
+          <p>Étudiant en troisième année de BUT Sciences des Données, parcours <b>Visualisation et Conception d'Outils Décisionnels</b>, 
+            à l'<b>IUT Grand Ouest Normandie</b> Lisieux.
+          </p>
+          <p>Passionné par l'informatique et le traitement de données, je suis actuellement disponible pour un stage ou une alternance.
+            Je suis motivé à apprendre et à contribuer à des projets innovants dans le domaine de la visualisation des données.
+          </p>
+          <div id="animated-buttons" class="text-center">
+            <span class="word-animation"><a class="btn btn-secondary btn-lg text-uppercase" href="https://github.com/holtzy/Publication"><b>Publications</b></a></span>
+            <span class="word-animation"><a class="btn btn-secondary btn-lg text-uppercase" href="https://github.com/holtzy/Talk"><b>Talks</b></a></span>
+            <span class="word-animation"><a class="btn btn-secondary btn-lg text-uppercase" href="https://twitter.com/R_Graph_Gallery"><b>Twitter</b></a></span>
+            <span class="word-animation"><a class="btn btn-secondary btn-lg text-uppercase" href="https://github.com/holtzy"><b>Github</b></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const buttons = document.querySelectorAll('#animated-buttons span');
+    let current = 0;
+
+    function showNextButton() {
+      // cacher tous les boutons
+      buttons.forEach(btn => btn.classList.remove('visible'));
+
+      // afficher le bouton actuel
+      buttons[current].classList.add('visible');
+
+      // passer au suivant (en boucle)
+      current = (current + 1) % buttons.length;
+
+      // rappeler la fonction après 1,5 secondes
+      setTimeout(showNextButton, 1500);
+    }
+
+    showNextButton();
+  </script>
+</body>
+</html>
